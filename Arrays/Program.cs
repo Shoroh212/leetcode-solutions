@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+
 public class Solution
 {
     public static void Main(string[] args)
@@ -16,6 +17,13 @@ public class Solution
         string s1 = string.Join("", l1);
         string s2 = string.Join("", l2);
 
+        /*
+        string text1 =l1.ToString();
+        string text2 =l2.ToString();
+
+
+        var answer =text1 + text2;
+        */
         int n1 = int.Parse(s1);
         int n2 = int.Parse(s2);
 
@@ -23,9 +31,8 @@ public class Solution
 
         Console.WriteLine(sum);
 
-        // обратно в список цифр
-        var result = sum.ToString()
-                        .Select(c => int.Parse(c.ToString()))
+        
+        var result = sum.ToString() .Select(c => int.Parse(c.ToString()))
                         .ToList();
 
         Console.WriteLine(string.Join(", ", result));
