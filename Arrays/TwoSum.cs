@@ -1,7 +1,7 @@
 public class Solution
-{
+{  // TwoSum
     public int[] TwoSum(int[] nums, int target)
-    {
+    { 
         for (int i = 0; i < nums.Length; i++)
         {
             for (int j = i + 1; j < nums.Length; j++)
